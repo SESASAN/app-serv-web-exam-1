@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Talleres\\Uni\\Sem5\\App\\Examen 1\\Servicios_Vehiculos_ITM\\",
+  "WorkspaceRootPath": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|d:\\talleres\\uni\\sem5\\app\\examen 1\\servicios_vehiculos_itm\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|solutionrelative:models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|c:\\users\\jjms\\documents\\app-serv-web-exam-1\\servicios_vehiculos_itm\\clases\\clsmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|solutionrelative:clases\\clsmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|c:\\users\\jjms\\documents\\app-serv-web-exam-1\\servicios_vehiculos_itm\\clases\\clsventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|solutionrelative:clases\\clsventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|c:\\users\\jjms\\documents\\app-serv-web-exam-1\\servicios_vehiculos_itm\\clases\\clsvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|solutionrelative:clases\\clsvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|c:\\users\\jjms\\documents\\app-serv-web-exam-1\\servicios_vehiculos_itm\\clases\\clscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|solutionrelative:clases\\clscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|c:\\users\\jjms\\documents\\app-serv-web-exam-1\\servicios_vehiculos_itm\\clases\\clsagencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|solutionrelative:clases\\clsagencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +30,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsVenta.cs",
+              "DocumentMoniker": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsVenta.cs",
+              "RelativeDocumentMoniker": "Clases\\clsVenta.cs",
+              "ToolTip": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsVenta.cs",
+              "RelativeToolTip": "Clases\\clsVenta.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T01:37:02.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsCliente.cs",
+              "DocumentMoniker": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsCliente.cs",
+              "RelativeDocumentMoniker": "Clases\\clsCliente.cs",
+              "ToolTip": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsCliente.cs",
+              "RelativeToolTip": "Clases\\clsCliente.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T01:34:26.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsVehiculo.cs",
+              "DocumentMoniker": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsVehiculo.cs",
+              "RelativeDocumentMoniker": "Clases\\clsVehiculo.cs",
+              "ToolTip": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsVehiculo.cs",
+              "RelativeToolTip": "Clases\\clsVehiculo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA7wAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T01:29:10.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsMarca.cs",
+              "DocumentMoniker": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsMarca.cs",
+              "RelativeDocumentMoniker": "Clases\\clsMarca.cs",
+              "ToolTip": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsMarca.cs",
+              "RelativeToolTip": "Clases\\clsMarca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T01:23:43.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -25,16 +97,21 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\Talleres\\Uni\\Sem5\\App\\Examen 1\\Servicios_Vehiculos_ITM\\Models\\Model1.edmx",
-              "RelativeDocumentMoniker": "Models\\Model1.edmx",
-              "ToolTip": "D:\\Talleres\\Uni\\Sem5\\App\\Examen 1\\Servicios_Vehiculos_ITM\\Models\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "Models\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-03-12T00:23:59.148Z",
-              "EditorCaption": " [Diagram1]"
+              "DocumentIndex": 4,
+              "Title": "clsAgencia.cs",
+              "DocumentMoniker": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsAgencia.cs",
+              "RelativeDocumentMoniker": "Clases\\clsAgencia.cs",
+              "ToolTip": "C:\\Users\\JJMS\\Documents\\app-serv-web-exam-1\\Servicios_Vehiculos_ITM\\Clases\\clsAgencia.cs",
+              "RelativeToolTip": "Clases\\clsAgencia.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T00:47:04.716Z",
+              "EditorCaption": ""
             }
           ]
         }
