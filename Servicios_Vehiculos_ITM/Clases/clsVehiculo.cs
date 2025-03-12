@@ -4,6 +4,7 @@ using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Security.Policy;
 using System.Web;
+using System.Web.Http;
 using Servicios_Vehiculos_ITM.Models;
 
 namespace Servicios_Vehiculos_ITM.Clases
@@ -43,9 +44,9 @@ namespace Servicios_Vehiculos_ITM.Clases
             return "Actualizacion exitosa";
         }
 
-        public string Eliminar()
+        public string Eliminar(int Id_Vehiculo)
         {
-            Vehiculo ve = Consultar(vehiculo.Id_Vehiculo);
+            Vehiculo ve = Consultar(Id_Vehiculo);
             if (ve == null)
             {
                 return "Vehiculo inexistente";

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Db_Agencia_CarrosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Agencia">
+    <Key>
+      <PropertyRef Name="Id_Agencia" />
+    </Key>
+    <Property Name="Id_Agencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ubicacion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Id_Cliente" />
+    </Key>
+    <Property Name="Id_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK__Ventas__id_Clien__300424B4" FromRole="Clientes" ToRole="Ventas" />
+  </EntityType>
+  <EntityType Name="Marca">
+    <Key>
+      <PropertyRef Name="Id_Marca" />
+    </Key>
+    <Property Name="Id_Marca" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Vehiculos" Relationship="Self.FK__Vehiculos__Marca__2B3F6F97" FromRole="Marcas" ToRole="Vehiculos" />
+  </EntityType>
+  <EntityType Name="Vehiculo">
+    <Key>
+      <PropertyRef Name="Id_Vehiculo" />
+    </Key>
+    <Property Name="Id_Vehiculo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Marca" Type="Int32" />
+    <Property Name="Motor" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Num_Puertas" Type="Int32" Nullable="false" />
+    <Property Name="Tipo_Combustible" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Accesorios" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Marca1" Relationship="Self.FK__Vehiculos__Marca__2B3F6F97" FromRole="Vehiculos" ToRole="Marcas" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK__Ventas__id_Vehic__2F10007B" FromRole="Vehiculos" ToRole="Ventas" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="Id_Venta" />
+    </Key>
+    <Property Name="Id_Venta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Vehiculo" Type="Int32" Nullable="false" />
+    <Property Name="id_Cliente" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__Ventas__id_Clien__300424B4" FromRole="Ventas" ToRole="Clientes" />
+    <NavigationProperty Name="Vehiculo" Relationship="Self.FK__Ventas__id_Vehic__2F10007B" FromRole="Ventas" ToRole="Vehiculos" />
+  </EntityType>
+  <Association Name="FK__Ventas__id_Clien__300424B4">
+    <End Role="Clientes" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Ventas" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="Id_Cliente" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="id_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vehiculos__Marca__2B3F6F97">
+    <End Role="Marcas" Type="Self.Marca" Multiplicity="0..1" />
+    <End Role="Vehiculos" Type="Self.Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marcas">
+        <PropertyRef Name="Id_Marca" />
+      </Principal>
+      <Dependent Role="Vehiculos">
+        <PropertyRef Name="Marca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ventas__id_Vehic__2F10007B">
+    <End Role="Vehiculos" Type="Self.Vehiculo" Multiplicity="1" />
+    <End Role="Ventas" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehiculos">
+        <PropertyRef Name="Id_Vehiculo" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="id_Vehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Db_Agencia_CarrosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Agencias" EntityType="Self.Agencia" />
+    <EntitySet Name="Clientes" EntityType="Self.Cliente" />
+    <EntitySet Name="Marcas" EntityType="Self.Marca" />
+    <EntitySet Name="Vehiculos" EntityType="Self.Vehiculo" />
+    <EntitySet Name="Ventas" EntityType="Self.Venta" />
+    <AssociationSet Name="FK__Ventas__id_Clien__300424B4" Association="Self.FK__Ventas__id_Clien__300424B4">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vehiculos__Marca__2B3F6F97" Association="Self.FK__Vehiculos__Marca__2B3F6F97">
+      <End Role="Marcas" EntitySet="Marcas" />
+      <End Role="Vehiculos" EntitySet="Vehiculos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ventas__id_Vehic__2F10007B" Association="Self.FK__Ventas__id_Vehic__2F10007B">
+      <End Role="Vehiculos" EntitySet="Vehiculos" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

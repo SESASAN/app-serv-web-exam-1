@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Db_Agencia_CarrosModelStoreContainer" CdmEntityContainer="Db_Agencia_CarrosEntities">
+    <EntitySetMapping Name="Agencias">
+      <EntityTypeMapping TypeName="Db_Agencia_CarrosModel.Agencia">
+        <MappingFragment StoreEntitySet="Agencia">
+          <ScalarProperty Name="Id_Agencia" ColumnName="Id_Agencia" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="Db_Agencia_CarrosModel.Cliente">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="Db_Agencia_CarrosModel.Marca">
+        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="Id_Marca" ColumnName="Id_Marca" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehiculos">
+      <EntityTypeMapping TypeName="Db_Agencia_CarrosModel.Vehiculo">
+        <MappingFragment StoreEntitySet="Vehiculos">
+          <ScalarProperty Name="Id_Vehiculo" ColumnName="Id_Vehiculo" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Motor" ColumnName="Motor" />
+          <ScalarProperty Name="Num_Puertas" ColumnName="Num_Puertas" />
+          <ScalarProperty Name="Tipo_Combustible" ColumnName="Tipo_Combustible" />
+          <ScalarProperty Name="Accesorios" ColumnName="Accesorios" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ventas">
+      <EntityTypeMapping TypeName="Db_Agencia_CarrosModel.Venta">
+        <MappingFragment StoreEntitySet="Ventas">
+          <ScalarProperty Name="Id_Venta" ColumnName="Id_Venta" />
+          <ScalarProperty Name="id_Vehiculo" ColumnName="id_Vehiculo" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "0c3da137-96ea-4762-80df-68cee930f596",
+		"name": "Examen 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39631283"
+	},
+	"item": [
+		{
+			"name": "Vehiculos",
+			"item": [
+				{
+					"name": "ConsultarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Vehiculo}}/ConsultarTodos",
+							"host": [
+								"{{Vehiculo}}"
+							],
+							"path": [
+								"ConsultarTodos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Vehiculo}}/Consultar?Id_Vehiculo=3",
+							"host": [
+								"{{Vehiculo}}"
+							],
+							"path": [
+								"Consultar"
+							],
+							"query": [
+								{
+									"key": "Id_Vehiculo",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_Vehiculo\": \"4\",\r\n    \"Marca\": \"3\",\r\n    \"Motor\": \"Renault\",\r\n    \"Num_Puertas\": \"5\",\r\n    \"Tipo_Combustible\": \"Diesel\",\r\n    \"Accesorios\": \"Pantallas\",\r\n    \"Activo\": \"false\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Vehiculo}}/Insertar",
+							"host": [
+								"{{Vehiculo}}"
+							],
+							"path": [
+								"Insertar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_Vehiculo\": \"4\",\r\n    \"Marca\": \"3\",\r\n    \"Motor\": \"Renault\",\r\n    \"Num_Puertas\": \"5\",\r\n    \"Tipo_Combustible\": \"Diesel\",\r\n    \"Accesorios\": \"Pantallas\",\r\n    \"Activo\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Vehiculo}}/Actualizar",
+							"host": [
+								"{{Vehiculo}}"
+							],
+							"path": [
+								"Actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Vehiculo}}/Eliminar?Id_Vehiculo=4",
+							"host": [
+								"{{Vehiculo}}"
+							],
+							"path": [
+								"Eliminar"
+							],
+							"query": [
+								{
+									"key": "Id_Vehiculo",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Vehiculo",
+			"value": "https://localhost:44362/api/Vehiculos",
+			"type": "string"
+		}
+	]
+}
