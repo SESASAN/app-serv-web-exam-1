@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Talleres\\Uni\\Sem5\\App\\Examen 1\\Servicios_Vehiculos_ITM\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|d:\\talleres\\uni\\sem5\\app\\examen 1\\servicios_vehiculos_itm\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{DC89809D-1FB3-4B3F-85AB-DB34D4BED8C1}|Servicios_Vehiculos_ITM.csproj|solutionrelative:models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -20,8 +25,16 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Talleres\\Uni\\Sem5\\App\\Examen 1\\Servicios_Vehiculos_ITM\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Models\\Model1.edmx",
+              "ToolTip": "D:\\Talleres\\Uni\\Sem5\\App\\Examen 1\\Servicios_Vehiculos_ITM\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-03-12T00:23:59.148Z",
+              "EditorCaption": " [Diagram1]"
             }
           ]
         }
